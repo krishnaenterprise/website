@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#151515">
+<title>Google Review | Krishna Enterprise & Services</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;padding:22px;
+ background:#f7f5f0;
+ font-family:Arial,sans-serif;
+ color:#171717;
+}
+.card{
+ max-width:560px;margin:25px auto;
+ background:white;padding:28px;
+ border-radius:22px;
+ border:1px solid #e6dcc6;
+ box-shadow:0 10px 35px #00000012;
+}
+.brand{
+ text-align:center;color:#a18137;
+ font-size:13px;font-weight:bold;
+ letter-spacing:2px;
+}
+h1{text-align:center;font-size:27px}
+p{text-align:center;color:#666;line-height:1.6}
+label{font-weight:bold;display:block;margin:24px 0 10px}
+textarea{
+ width:100%;height:190px;padding:15px;
+ border:1px solid #ddd;border-radius:12px;
+ font-size:16px;line-height:1.5;
+}
+.note{font-size:12px}
+button{
+ width:100%;padding:16px;margin-top:13px;
+ border:0;border-radius:12px;
+ font-size:16px;font-weight:bold;
+ cursor:pointer;
+}
+.copy{background:#171717;color:white}
+.post{background:#c9a34a;color:#171717}
+#status{font-size:13px;color:green}
+.footer{font-size:12px;margin-top:22px}
+</style>
+</head>
+<body>
+<div class="card">
+ <div class="brand">KRISHNA ENTERPRISE & SERVICES</div>
+ <h1>Share Your Experience</h1>
+ <p>Thank you for choosing us! Your honest feedback is valuable to us.</p>
+
+ <label for="review">Your Google Review</label>
+
+ <textarea id="review">I used the services of Krishna Enterprise & Services, Gandhidham, for [mention the service]. My experience was [describe your actual experience]. Thank you for your support.</textarea>
+
+ <p class="note">
+ You can edit this message according to your actual experience.
+ Please share only an honest review.
+ </p>
+
+ <button class="copy" onclick="copyReview()">Copy Review</button>
+
+ <button class="post" onclick="postReview()">
+ Continue to Google Review
+ </button>
+
+ <p id="status"></p>
+
+ <p class="footer">
+ Your review will be submitted by you through your own Google account.
+ </p>
+</div>
+
+<script>
+async function copyReview(){
+ const text=document.getElementById("review").value;
+ try{
+  await navigator.clipboard.writeText(text);
+  document.getElementById("status").innerText=
+  "Review copied! Now continue to Google.";
+ }catch(e){
+  const box=document.getElementById("review");
+  box.select();
+  document.getElementById("status").innerText=
+  "Text selected. Copy it using your phone menu.";
+ }
+}
+function postReview(){
+ window.open(
+ "https://g.page/r/CYumN1BIM60oEBM/review",
+ "_blank"
+ );
+}
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://krishnaenterprise.github.io/Krishna_enterprise_services_website/sitemap.xml
+Sitemap: https://krishnaenterprise.github.io/website/sitemap.xml

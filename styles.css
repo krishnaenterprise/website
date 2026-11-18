@@ -298,3 +298,6 @@
 .document-checklist input { width: 18px !important; min-height: 18px !important; height: 18px; margin: 1px 0 0; accent-color: #1c5bb8; flex: 0 0 auto; }
 .assistant-disclaimer { margin: 1rem 0 0; color: #738092; font-size: .78rem; line-height: 1.55; }
 @media (max-width: 560px) { .document-checklist { grid-template-columns: 1fr; } .assistant-info { padding: .8rem; } }
+
+/* Legal links */
+.footer-legal{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:13px}.footer-legal a{color:inherit;text-decoration:underline;text-underline-offset:3px}

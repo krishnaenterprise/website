@@ -301,3 +301,18 @@
 
 /* Legal links */
 .footer-legal{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:13px}.footer-legal a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+
+/* Updated three-category service overview */
+.quick-grid-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.service-overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
+.service-overview-card{background:#fff;border:1px solid #e8edf5;border-radius:16px;padding:24px 22px;box-shadow:0 8px 24px #102a5608}
+.service-overview-kicker{font-size:10px;font-weight:800;letter-spacing:1.4px;color:#2f6fe4;margin-bottom:12px}
+.service-overview-card h3{font-family:Manrope,sans-serif;font-size:20px;line-height:1.3;color:var(--navy);margin:0 0 12px}
+.service-overview-card p{font-size:13px;line-height:1.8;color:#64728a;margin:0 0 14px}
+.service-overview-card small{display:block;border-top:1px solid #edf1f7;padding-top:12px;font-size:11px;line-height:1.65;color:#7b879a}
+.support-transparency{margin-top:28px;padding:23px 25px;border:1px solid #e3eaf5;border-radius:15px;background:#f8faff}
+.support-transparency h3{font-family:Manrope,sans-serif;color:var(--navy);font-size:19px;margin:0 0 12px}
+.support-transparency p{font-size:13px;line-height:1.8;color:#64728a;margin:8px 0}
+.support-transparency a{color:#245fc7;font-weight:700}
+@media(max-width:900px){.service-overview-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.quick-grid-three{grid-template-columns:1fr}.service-overview-grid{grid-template-columns:1fr;gap:11px}.service-overview-card{padding:20px}.support-transparency{padding:19px}}

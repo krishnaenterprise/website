@@ -46,8 +46,7 @@ const design = [
  ['Social Media Designs','WhatsApp and social media creatives','globe'],
  ['Visiting Card & Flyer','Business cards and promotional flyers','card']
 ];
-renderCards('rto-grid',rto); renderCards('docs-grid',docs); renderCards('property-grid',property);
-renderCards('web-grid',web); renderCards('design-grid',design);
+// Service overview cards are authored in index.html; no dynamic card rendering is needed.
 document.getElementById('year').textContent=new Date().getFullYear();
 const menuButton=document.querySelector('.menu-toggle');
 const nav=document.querySelector('.nav');

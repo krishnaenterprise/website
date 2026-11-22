@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111111">
+<link rel="canonical" href="https://krishnaenterprise.github.io/website/review.html">
+<meta name="robots" content="index,follow">
+<title>KES Customer Review Helper | Krishna Enterprise & Services</title>
+<style>
+:root{--gold:#c9a64b;--gold2:#e5c76e;--ink:#151515;--muted:#666;--paper:#faf9f5;--line:#e8e3d6}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#f7f5ee,#eeeae0);font-family:Arial,Helvetica,sans-serif;color:var(--ink);padding:22px 14px 40px}
+.wrap{max-width:720px;margin:auto}.card{background:#fff;border:1px solid #e5dfd0;border-radius:24px;padding:26px 22px;box-shadow:0 12px 35px #241b0b12}
+.brand{text-align:center;color:#8a7133;letter-spacing:2.5px;font-size:13px;font-weight:700;margin:2px 0 20px}
+.logo{width:58px;height:58px;border-radius:17px;background:linear-gradient(135deg,#f4d46b,#c99b1d);display:grid;place-items:center;font-weight:900;font-size:23px;margin:0 auto 12px;color:#17130a;box-shadow:inset 0 0 0 1px #a47e1c}
+h1{text-align:center;font-size:29px;margin:8px 0 10px;letter-spacing:-.7px}.intro{text-align:center;color:#666;line-height:1.55;margin:0 auto 22px;max-width:520px}
+.lang{display:flex;justify-content:center;gap:8px;margin:0 0 24px}.lang button{border:1px solid var(--line);background:#fff;padding:9px 17px;border-radius:30px;font-weight:700;color:#555}.lang button.active{background:#171717;color:#fff;border-color:#171717}
+.step{font-size:12px;font-weight:800;letter-spacing:2px;color:#987a31;margin:22px 0 8px}.section-title{font-size:21px;font-weight:750;margin:0 0 7px}.hint{color:#777;font-size:14px;line-height:1.5;margin:0 0 15px}
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.service{border:1px solid #e5e1d8;border-radius:16px;background:#fff;padding:15px 12px;text-align:left;min-height:104px;cursor:pointer;transition:.15s}.service .emoji{font-size:25px;display:block;margin-bottom:8px}.service strong{display:block;font-size:15px}.service small{display:block;color:#777;margin-top:4px;font-size:12px}.service.selected{border:2px solid var(--gold);background:#fffcf2;box-shadow:0 5px 15px #c9a64b22;padding:14px 11px}
+.options{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}.chip{border:1px solid #e4dfd3;border-radius:22px;padding:9px 12px;background:#fff;color:#4f4a40;font-size:13px;cursor:pointer}.chip.selected{border-color:#b38b25;background:#fff7df;color:#4a3710;font-weight:700}
+label{font-weight:700;display:block;margin:16px 0 8px}textarea{width:100%;min-height:180px;border:1px solid #ddd8cd;border-radius:14px;padding:14px;font:15px/1.6 Arial,sans-serif;resize:vertical;color:#222}textarea:focus{outline:2px solid #d7bd72;border-color:transparent}
+.note{text-align:center;color:#777;font-size:13px;line-height:1.5;margin:10px 4px 18px}.btn{width:100%;border:0;border-radius:13px;padding:16px 14px;font-size:16px;font-weight:800;cursor:pointer;margin-top:10px}.copy{background:#171717;color:white}.google{background:linear-gradient(135deg,#e5c76e,#c49a35);color:#17130a}.status{text-align:center;font-size:13px;color:#52733b;min-height:18px;margin-top:9px}.footer{text-align:center;color:#8a8579;font-size:12px;margin:20px 0 0}
+@media(max-width:390px){.card{padding:22px 16px}.services{gap:8px}.service{padding:12px 10px}.service strong{font-size:14px}h1{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="wrap"><main class="card">
+  <img class="logo" src="assets/logo.webp" width="120" height="120" alt="Krishna Enterprise & Services KES logo" style="display:block;object-fit:cover;margin:0 auto 12px;border-radius:50%;">
+  <div class="brand">KRISHNA ENTERPRISE &amp; SERVICES</div>
+  <h1 id="heading">Share Your Experience</h1>
+  <p class="intro" id="intro">Thank you for choosing us. Select the service you used and tell us what your experience was like. Your honest feedback helps us improve.</p>
+  <div class="lang">
+    <button id="en" class="active" type="button">English</button>
+    <button id="hi" type="button">हिन्दी</button>
+  </div>
+
+  <div class="step" id="step1">STEP 1</div>
+  <h2 class="section-title" id="chooseTitle">Which service did you use?</h2>
+  <p class="hint" id="chooseHint">Select one service below.</p>
+  <div class="services" id="services">
+    <button class="service selected" data-service="Driving Licence" type="button"><span class="emoji">🚗</span><strong>Driving Licence</strong><small>Licence related work</small></button>
+    <button class="service" data-service="Other RTO Services" type="button"><span class="emoji">🚘</span><strong>Other RTO Services</strong><small>Vehicle / RTO work</small></button>
+    <button class="service" data-service="PAN / Aadhaar" type="button"><span class="emoji">🪪</span><strong>PAN / Aadhaar</strong><small>PAN card / Aadhaar work</small></button>
+    <button class="service" data-service="Documentation Services" type="button"><span class="emoji">📄</span><strong>Documentation</strong><small>Certificates and forms</small></button>
+    <button class="service" data-service="Property Services" type="button"><span class="emoji">🏠</span><strong>Property Services</strong><small>Property related assistance</small></button>
+    <button class="service" data-service="Business Website" type="button"><span class="emoji">🌐</span><strong>Business Website</strong><small>Website design / development</small></button>
+    <button class="service" data-service="Poster / Banner Designing" type="button"><span class="emoji">🎨</span><strong>Poster / Banner</strong><small>Creative designing</small></button>
+  </div>
+
+  <div class="step" id="step2">STEP 2</div>
+  <h2 class="section-title" id="experienceTitle">How was your experience?</h2>
+  <p class="hint" id="experienceHint">Choose only the points that honestly match your experience. You can select more than one.</p>
+  <div class="options" id="options">
+    <button class="chip" data-point="Helpful guidance" type="button">Helpful guidance</button>
+    <button class="chip" data-point="Clear communication" type="button">Clear communication</button>
+    <button class="chip" data-point="Work completed on time" type="button">Work completed on time</button>
+    <button class="chip" data-point="Friendly support" type="button">Friendly support</button>
+    <button class="chip" data-point="Reasonable charges" type="button">Reasonable charges</button>
+  </div>
+  <label for="review" id="reviewLabel">Your review (edit before posting)</label>
+  <textarea id="review" spellcheck="true">I contacted Krishna Enterprise & Services, Gandhidham, for Driving Licence services. Please add details about your actual experience.</textarea>
+  <p class="note" id="note">Please edit this message so it reflects your own experience. Share only an honest review. You are free to write your own words.</p>
+  <button class="btn copy" id="copy" type="button">Copy Review</button>
+  <button class="btn google" id="google" type="button">Continue to Google Review ↗</button>
+  <div class="status" id="status" aria-live="polite"></div>
+  <p class="footer">Your review is posted by you through your own Google account.</p>
+</main></div>
+<script>
+const reviewUrl='https://g.page/r/CYumN1BIM60oECE/review';
+let lang='en',service='Driving Licence',selectedPoints=[];
+const $=id=>document.getElementById(id);
+const translations={
+en:{heading:'Share Your Experience',intro:'Thank you for choosing us. Select the service you used and tell us what your experience was like. Your honest feedback helps us improve.',step1:'STEP 1',chooseTitle:'Which service did you use?',chooseHint:'Select one service below.',step2:'STEP 2',experienceTitle:'How was your experience?',experienceHint:'Choose only the points that honestly match your experience. You can select more than one.',reviewLabel:'Your review (edit before posting)',note:'Please edit this message so it reflects your own experience. Share only an honest review. You are free to write your own words.',copy:'Copy Review',google:'Continue to Google Review ↗',copied:'Review copied. You can now paste it into Google.',copyFail:'Please select and copy the review text.',points:['Helpful guidance','Clear communication','Work completed on time','Friendly support','Reasonable charges'],services:['Driving Licence','Other RTO Services','PAN / Aadhaar','Documentation Services','Property Services','Business Website','Poster / Banner Designing']},
+hi:{heading:'अपना अनुभव साझा करें',intro:'हमारी सेवा चुनने के लिए धन्यवाद। आपने जो सेवा ली है उसे चुनें और अपना वास्तविक अनुभव बताएं। आपकी ईमानदार प्रतिक्रिया हमें बेहतर बनने में मदद करती है।',step1:'चरण 1',chooseTitle:'आपने कौन-सी सेवा ली थी?',chooseHint:'नीचे से अपनी सेवा चुनें।',step2:'चरण 2',experienceTitle:'आपका अनुभव कैसा रहा?',experienceHint:'केवल वही बातें चुनें जो आपके वास्तविक अनुभव से मेल खाती हों। एक से अधिक चुन सकते हैं।',reviewLabel:'आपकी समीक्षा (पोस्ट करने से पहले संपादित करें)',note:'इस संदेश को अपने वास्तविक अनुभव के अनुसार संपादित करें। केवल ईमानदार समीक्षा साझा करें। आप अपने शब्दों में भी लिख सकते हैं।',copy:'रिव्यू कॉपी करें',google:'Google Review पर जाएँ ↗',copied:'रिव्यू कॉपी हो गया। अब इसे Google पर पेस्ट कर सकते हैं।',copyFail:'कृपया रिव्यू टेक्स्ट चुनकर कॉपी करें।',points:['सही मार्गदर्शन मिला','स्पष्ट जानकारी मिली','काम समय पर हुआ','अच्छा सहयोग मिला','उचित शुल्क लगा'],services:['ड्राइविंग लाइसेंस','अन्य RTO सेवाएँ','PAN / आधार','डॉक्यूमेंटेशन सेवाएँ','प्रॉपर्टी सेवाएँ','बिज़नेस वेबसाइट','पोस्टर / बैनर डिज़ाइन']}
+};
+function makeReview(){
+ const t=translations[lang],points=selectedPoints.map(p=>t.points[translations.en.points.indexOf(p)]);
+ if(lang==='en'){
+  let s=`I contacted Krishna Enterprise & Services, Gandhidham, for ${service}.`;
+  if(points.length)s+=' My experience: '+points.join(', ').toLowerCase()+'.';
+  s+=' '+(selectedPoints.length?'Thank you for your support.':'Please add a sentence about your actual experience.');
+  $('review').value=s;
+ }else{
+  const names=['ड्राइविंग लाइसेंस','अन्य RTO सेवाएँ','PAN / आधार','डॉक्यूमेंटेशन सेवाएँ','प्रॉपर्टी सेवाएँ','बिज़नेस वेबसाइट','पोस्टर / बैनर डिज़ाइन'];
+  const idx=translations.en.services.indexOf(service);
+  let s=`मैंने Gandhidham में Krishna Enterprise & Services से ${names[idx]||service} की सेवा ली।`;
+  if(points.length)s+=` मेरा अनुभव: ${points.join('، ')}।`;
+  s+=selectedPoints.length?' धन्यवाद।':' कृपया अपना वास्तविक अनुभव यहाँ लिखें।';
+  $('review').value=s;
+ }
+}
+function renderLang(){
+ const t=translations[lang];
+ ['heading','intro','step1','chooseTitle','chooseHint','step2','experienceTitle','experienceHint','reviewLabel','note','copy','google'].forEach(k=>$(k).textContent=t[k]);
+ document.querySelectorAll('.chip').forEach((b,i)=>{b.textContent=t.points[i];b.classList.toggle('selected',selectedPoints.includes(translations.en.points[i]));});
+ document.querySelectorAll('.service').forEach((b,i)=>{b.querySelector('strong').textContent=t.services[i];});
+ $('en').classList.toggle('active',lang==='en');$('hi').classList.toggle('active',lang==='hi');
+ makeReview();
+}
+document.querySelectorAll('.service').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.service').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');service=b.dataset.service;makeReview();
+}));
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{
+ const p=b.dataset.point;b.classList.toggle('selected');
+ selectedPoints=selectedPoints.includes(p)?selectedPoints.filter(x=>x!==p):[...selectedPoints,p];makeReview();
+}));
+$('en').addEventListener('click',()=>{lang='en';renderLang()});$('hi').addEventListener('click',()=>{lang='hi';renderLang()});
+$('copy').addEventListener('click',async()=>{
+ try{await navigator.clipboard.writeText($('review').value);$('status').textContent=translations[lang].copied;}
+ catch(e){$('review').focus();$('review').select();$('status').textContent=translations[lang].copyFail;}
+});
+$('google').addEventListener('click',()=>window.open(reviewUrl,'_blank','noopener'));
+renderLang();
+</script>
+</body></html>
